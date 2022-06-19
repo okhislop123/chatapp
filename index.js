@@ -60,7 +60,7 @@ io.on("connection", (socket) => {
   // ...
 });
 
-const port = process.env.port || 4400;
+const port = process.env.PORT || 4400;
 app.use("api/v1", rootRoute);
 
 httpServer.listen(port, () => {
