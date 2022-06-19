@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Room Chat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="../img/baby.jpg" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/room.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__left p-2">
+        <div class="header__app">
+          <img
+            src="../img/logo.gif"
+            alt="logo"
+            style="width: 100px; border-radius: 15px"
+          />
+          <div>
+            <h4 class="m-0">Room Chat</h4>
+            <h6>
+              Thành viên<span id="number-user" style="font-size: 12px">
+                (0)</span
+              >
+            </h6>
+          </div>
+        </div>
+
+        <hr />
+        <div class="info__room mt-3">
+          <ul id="room_person"></ul>
+        </div>
+      </div>
+      <div class="page__right">
+        <div class="message__container"></div>
+        <form
+          id="form-chat"
+          class="input-group px-3 py-4 message"
+          style="background-color: #f5f5f5; box-shadow: #ccc 0 0 10px"
+        >
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="Nhập tin nhắn ..."
+            aria-label=""
+          />
+          <i class="far fa-grin-tongue"></i>
+        </form>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.5/qs.js"
+      integrity="sha512-ak35kmfwP/7NAi5sW0beIdmx8mrlHoYrrkOVbHs1AjifM+EZ8CeijXtEBFuEVsCarWeXKi1T/qt6R1OGXECd9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/room.js"></script>
+  </body>
+</html>
